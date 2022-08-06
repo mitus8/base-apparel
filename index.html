@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="logo-mobile">
+          <img src="images/logo.svg" alt="" />
+        </div>
+        <div class="hero-img">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/hero-desktop.jpg"
+              height="100%"
+            />
+            <img src="images/hero-mobile.jpg" alt="" width="100%" />
+          </picture>
+        </div>
+        <div class="main">
+          <div class="logo-desktop">
+            <img src="images/logo.svg" alt="" />
+          </div>
+          <h1><span>We're</span></h1>
+          <h1>coming</h1>
+          <h1>soon</h1>
+          <p class="p1">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form id="form">
+            <input type="email" name="email" id="email" placeholder="Email Address"/>
+            <img class="error-img" src="images/icon-error.svg" alt="" />
+            <button class="btn" type="submit">
+              <img src="images/icon-arrow.svg" alt="" />
+            </button>
+            <p class="error">Please provide a valid email</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
